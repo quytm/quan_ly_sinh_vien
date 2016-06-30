@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <form method="post" action="/api/edit">
+      <input type="text" id='mssv' name="mssv" placeholder="Mã số sinh viên">
+      <br><br>
+
+      <input type="text" id='hoten' name="hoten" placeholder="Họ và tên">
+      <br><br>
+
+      <input type="date" id='ngaysinh' name="ngaysinh" placeholder="Ngày sinh">
+      <label>(Ngày sinh)</label>
+      <br><br>
+
+      <input type="number" id='tinchi' name="tinchi" placeholder="Tín chỉ tích lũy">
+      <br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+
+
+    <script type="text/javascript" src="/javascripts/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="/javascripts/edit.js"></script>
+  </body>
+</html>
